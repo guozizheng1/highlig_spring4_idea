@@ -10,11 +10,10 @@ import org.springframework.context.annotation.PropertySource;
 import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 import org.springframework.core.env.Environment;
 import org.springframework.core.io.Resource;
-import org.springframework.stereotype.Component;
 
 @Configuration
 @ComponentScan("com.wisely.highlight_spring4.ch2.el")
-@PropertySource("classpath:com/wisely/highlight_spring4/ch2/el/test.properties")
+@PropertySource("classpath:test.properties")
 
 public class ELConfig {
 
@@ -30,7 +29,7 @@ public class ELConfig {
     @Value("#{demoService.another}")
     private String fromAnother;
 
-    @Value("classpath:com/wisely/highlight_spring4/ch2/el/test.txt")
+    @Value("classpath:test.txt")
     private Resource testFile;
 
     @Value("http://www.google.com")
