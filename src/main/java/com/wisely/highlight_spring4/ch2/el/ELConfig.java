@@ -32,7 +32,7 @@ public class ELConfig {
     @Value("classpath:test.txt")
     private Resource testFile;
 
-    @Value("http://www.google.com")
+    @Value("http://www.baidu.com")
     private Resource testUrl;
 
     @Value("${book.name}")
